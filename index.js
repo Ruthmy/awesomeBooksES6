@@ -1,5 +1,5 @@
-import { homeLink, addBookLink, contactLink } from './modules/displaySections.js';
-import { newBook } from './modules/bookList.js';
+import './modules/displaySections.js';
+import './modules/bookList.js';
 import { DateTime } from './modules/luxon.js';
 
 // create a new DateTime object

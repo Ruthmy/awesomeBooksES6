@@ -3,13 +3,11 @@
 const homeLink = document.querySelector('.nav-item.list');
 const addBookLink = document.querySelector('.nav-item.add-new');
 const contactLink = document.querySelector('.nav-item.contact');
-const buttonsArray = [homeLink, addBookLink, contactLink];
 
 // Get the Pages ID Section
 const bookListSection = document.querySelector('.book-list');
 const addSection = document.querySelector('.add-section');
 const contactSection = document.querySelector('.contact-section');
-const sectionsArray = [bookListSection, addSection, contactSection];
 
 // Listeners for the links events
 homeLink.addEventListener('click', (event) => {

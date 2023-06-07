@@ -14,21 +14,19 @@ class BookList {
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 
-  removeBook = (title) =>{
+  removeBook = (title) => {
     this.books = this.books.filter((book) => book.title !== title);
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 
   // eslint-disable-next-line class-methods-use-this
-  createBookCard = (book) => {
-    return `
+  createBookCard = (book) => `
       <div class="book_card">
         <p class="book_title">${book.title}<span class="book_author"> by ${book.author}</span></p>
         <button class="remove_button">Remove</button>
         <hr>
       </div>
-    `;
-  }
+    `
 
   renderBook = (book) => {
     const bookCard = this.createBookCard(book);
@@ -65,4 +63,4 @@ class BookList {
 const newBook = new BookList();
 newBook.loadSavedBooks();
 
-export { newBook };
+export default newBook;

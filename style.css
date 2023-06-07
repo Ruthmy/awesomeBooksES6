@@ -85,7 +85,7 @@ footer {
 
 header {
   border-radius: 0 0 1rem 1rem;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0 1px 2px, rgba(0, 0, 0, 0.07) 0 2px 4px, rgba(0, 0, 0, 0.07) 0 4px 8px, rgba(0, 0, 0, 0.07) 0 8px 16px, rgba(0, 0, 0, 0.07) 0 16px 32px, rgba(0, 0, 0, 0.07) 0 32px 64px;
 }
 
 footer {
@@ -147,8 +147,6 @@ main,
   width: 80%;
   border-radius: 0.5rem;
   border: 1px solid rgb(165, 165, 165);
-  min-height: 0;
-  max-height: fit-content;
 }
 
 .book_card {
@@ -212,12 +210,6 @@ form.new_book button {
 }
 
 /* Contact Styles */
-
-.contact-section {
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
 
 #contact-info p:nth-child(3) {
   padding: 1rem;
