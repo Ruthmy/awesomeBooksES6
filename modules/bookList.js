@@ -9,28 +9,26 @@ class BookList {
     this.bookForm.addEventListener('submit', this.handleFormSubmit.bind(this));
   }
 
-  addBook(book) {
+  addBook = (book) => {
     this.books.push(book);
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 
-  removeBook(title) {
+  removeBook = (title) => {
     this.books = this.books.filter((book) => book.title !== title);
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 
   // eslint-disable-next-line class-methods-use-this
-  createBookCard(book) {
-    return `
+  createBookCard = (book) => `
       <div class="book_card">
-        <p class="book_title">${book.title} by <span class="book_author">${book.author}</span></p>
+        <p class="book_title">${book.title}<span class="book_author"> by ${book.author}</span></p>
         <button class="remove_button">Remove</button>
         <hr>
       </div>
-    `;
-  }
+    `
 
-  renderBook(book) {
+  renderBook = (book) => {
     const bookCard = this.createBookCard(book);
     this.bookSection.insertAdjacentHTML('afterbegin', bookCard);
     const removeBookButton = this.bookSection.querySelector('.remove_button');
@@ -45,13 +43,13 @@ class BookList {
     }
   }
 
-  loadSavedBooks() {
+  loadSavedBooks = () => {
     this.books.forEach((book) => {
       this.renderBook(book);
     });
   }
 
-  handleFormSubmit(event) {
+  handleFormSubmit = (event) => {
     event.preventDefault();
     const bookAuthor = this.bookAuthorInput.value;
     const bookTitle = this.bookTitleInput.value;
@@ -64,3 +62,5 @@ class BookList {
 
 const newBook = new BookList();
 newBook.loadSavedBooks();
+
+export default newBook;

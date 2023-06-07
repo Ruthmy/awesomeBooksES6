@@ -1,7 +1,7 @@
 {
   "name": "awsome-books",
   "version": "1.0.0",
-  "description": "",
+  "description": "<a name=\"readme-top\"></a>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,13 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruthmy/awesomeBooksES6.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ruthmy/awesomeBooksES6/issues"
+  },
+  "homepage": "https://github.com/Ruthmy/awesomeBooksES6#readme"
 }
